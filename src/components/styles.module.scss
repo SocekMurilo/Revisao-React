@@ -1,0 +1,25 @@
+.Card{
+    background-color: gray;
+    border: 1px solid black;
+    text-align: center;
+    width: 18vw;
+    height: 34vh;
+    margin-bottom: 15px;
+}
+.Title{
+    color: black;
+}
+
+.True{
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.False{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+}

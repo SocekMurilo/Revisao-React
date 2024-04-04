@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Perfume",
+    "desc": "Miguel Rousseouf",
+    "categoria": "Acesorio Pessoal",
+    "status": "true",
+    "value": "100.00",
+    "image": "https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/volarium/catalog/produtos/volarium/perfume/perfume-feminino/perfume-feminino-ch-tradicional-importado-original.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Colar",
+    "desc": "Jand Karno em perolas",
+    "categoria": "Acesorio Pessoal",
+    "status": "true",
+    "value": "2200.00",
+    "image": "https://cdn.awsli.com.br/600x450/1537/1537341/produto/152389745/01e29e7fcc.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Camisa",
+    "desc": "Camisa Supreme",
+    "categoria": "Roupa de Marca",
+    "status": "false",
+    "value": "3500.00",
+    "image": "https://montink.s3.amazonaws.com/nmt/estampas/montink2.lojavirtualnuvem.com.br/Branco_73466872.png"
+  },
+  {
+    "id": 4,
+    "name": "Tenis",
+    "desc": "Tenis da Gucci",
+    "categoria": "Roupa de Marca",
+    "status": "true",
+    "value": "8000.00",
+    "image": "https://acdn.mitiendanube.com/stores/001/157/548/products/gucci-21-5d053e626ef6ecdb2216564547401376-640-0.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Bolsa",
+    "desc": "Bolsa da Luis Vuitton",
+    "categoria": "Acesorio Pessoal",
+    "status": "false",
+    "value": "2600.00",
+    "image": "https://cdn.awsli.com.br/600x450/1935/1935945/produto/247807224/bolsaneverfuldame-uxjphy2rv3.jpg"
+  }
+]
