@@ -9,7 +9,7 @@ function App() {
   const [show, setShow] = useState("")
   const [data, setData] = useState([])
   const [page, setPage] = useState("")
-  // const [setName, setSearch] = useState("")
+  const [search, setSearch] = useState("")
 
 
   useEffect(() => {
@@ -28,22 +28,22 @@ function App() {
       console.error(error)
     })
   }, [page])
-
-  // useEffect(() => {
-  //   api.get(`/character/?name=${search}`).then((response) => {
-  //     if(!response.data.results){
-  //       <Alert severity="info">Vazio</Alert>
-  //       console.log("Vazio")
-  //     }
-  //     setData(response.data.results)
-  //   }).catch((error) => {
-  //     if(error.response.status === 404){
-  //       <Alert severity="info">"Esta pagina nao contem este personagem"</Alert>
-  //       console.log("Esta pagina nao contem este personagem")
-  //     }
-  //     console.error(error)
-  //   })
-  // }, [search])
+  useEffect(() => {
+    api.get(`/character/?name=${search}`).then((response) => {
+      console.log(response)
+      if(!response.data.results){
+        <Alert severity="info">Vazio</Alert>
+        console.log("Vazio")
+      }
+      setData(response.data.results)
+    }).catch((error) => {
+      if(error.response.status === 404){
+        <Alert severity="info">"Esta pagina nao contem este personagem"</Alert>
+        console.log("Esta pagina nao contem este personagem")
+      }
+      console.error(error)
+    })
+  }, [search])
 
 
   return (
@@ -73,9 +73,10 @@ function App() {
             <div >
                <input type="text" placeholder="1/43" value={page} onChange={(event) => setPage(event.target.value)}/>
             </div>
-            {/* <div >
-               <input type="text" placeholder="name" value={search} onChange={(event) => setSearch(event.target.value)}/>
-            </div> */}
+            <div >
+               <input type="text" placeholder="1/43" value={search} onChange={(event) => setSearch(event.target.value)}/>
+            </div>
+
             <div className={style.Card2}>
             {data.map((item) => { 
              return(
