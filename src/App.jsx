@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Card } from './components/Card'
+import { Maps } from './components/Maps'
 import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
 import style from './App.module.css'
@@ -74,7 +75,7 @@ function App() {
                <input type="text" placeholder="1/43" value={page} onChange={(event) => setPage(event.target.value)}/>
             </div>
             <div >
-               <input type="text" placeholder="1/43" value={search} onChange={(event) => setSearch(event.target.value)}/>
+               <input type="text" placeholder="search" value={search} onChange={(event) => setSearch(event.target.value)}/>
             </div>
 
             <div className={style.Card2}>
@@ -93,7 +94,7 @@ function App() {
         <>
       <h2>Mapa</h2>
           <div>
-              mapa aqui
+              <Maps></Maps>
           </div>
          </>
       }
